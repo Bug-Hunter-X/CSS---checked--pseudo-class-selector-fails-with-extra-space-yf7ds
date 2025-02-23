@@ -1,0 +1,9 @@
+The solution is simple: remove the extra space between the selector and the opening curly brace:
+
+```css
+input[type="checkbox"]:checked{
+  background-color: green; /*This will work*/
+}
+```
+
+By ensuring there is no space between the `:checked` pseudo-class and the opening curly brace `{` the styles will be applied correctly.
