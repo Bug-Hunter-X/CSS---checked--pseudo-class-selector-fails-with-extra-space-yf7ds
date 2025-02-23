@@ -1,0 +1,14 @@
+The following CSS code snippet demonstrates an unusual issue.  The `:checked` pseudo-class selector is expected to apply styles when a checkbox is checked, however it will not work if there's a space between the selector and the curly braces `{}`:
+
+```css
+input[type="checkbox"]:checked {
+  background-color: green; 
+}
+
+/* Incorrect - space before opening curly brace */
+input[type="checkbox"]:checked {
+  background-color: red; /*This will not work*/
+}
+```
+
+This issue is subtle and can be easily overlooked.  Many developers might not anticipate that a space between the selector and the opening curly brace can impact the selector's functionality.
